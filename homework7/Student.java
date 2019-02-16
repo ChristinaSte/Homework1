@@ -38,11 +38,7 @@ public class Student {
                 ", lastName='" + lastName + '\'' +
                 ", age=" + age + '\'' +
                 ", averageMark=" + averageMark +
-                '}';
+                '}' + "\n";
     }
 
-
-    public int compareTo(Student o) {
-        return Double.compare(averageMark, o.averageMark);
-    }
 }
