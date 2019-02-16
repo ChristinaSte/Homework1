@@ -1,21 +1,32 @@
 package homework7;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.ListIterator;
+import java.util.*;
 
 public class Task1 {
+
     public static void main(String[] args) {
-        ArrayList<String> list = new ArrayList<>();
-        list.addAll(Arrays.asList("this", "is", "lots", "of", "fun", "for", "every", "Java", "programmer"));
-        ListIterator<String> listiterator = list.listIterator();
+        List<String> linkedList = new LinkedList<>();
+        int length = 4;
+        String addSymbol = "****";
+
+        linkedList.add("this");
+        linkedList.add("is");
+        linkedList.add("lots");
+        linkedList.add("of");
+        linkedList.add("fun");
+        linkedList.add("for");
+        linkedList.add("every");
+        linkedList.add("Java");
+        linkedList.add("programmer");
+
+        ListIterator<String> listiterator = linkedList.listIterator();
         while (listiterator.hasNext()) {
-            if (listiterator.next().length() == 4) {
-                listiterator.add("****");
+            if (listiterator.next().length() == length) {
+                listiterator.add(addSymbol);
+
             }
         }
 
-        System.out.println(list);
+        System.out.println(linkedList);
     }
 }
-
