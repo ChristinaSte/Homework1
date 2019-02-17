@@ -3,16 +3,11 @@ package hw7;
 public class ShapeUtils {
 
 
-    public static boolean isRectangle(Figure someFigure){
-        if (someFigure instanceof Rectangle) {
-            return true;
-          else return false;
-        }
-
-        public static boolean isTriagle(Figure someFigure){
-            if (someFigure instanceof Triangle) {
-                return true;
-            else return false;
-            }
-        }
+    public static boolean isRectangle(Figure someFigure) {
+        boolean figureRectangle = someFigure instanceof Rectangle ? true : false;
     }
+
+    public static boolean isTriagle(Figure someFigure) {
+        boolean figureTriangle = someFigure instanceof Triangle ? true : false;
+    }
+}
